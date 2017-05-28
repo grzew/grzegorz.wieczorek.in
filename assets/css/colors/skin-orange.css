@@ -1,0 +1,95 @@
+.options {
+    color: #f86923;
+}
+
+.text-intro h3 {
+    color: #ffffff;
+}
+
+.text-intro p {
+    color: #f86923;
+}
+
+.hey a:hover {
+    color: #f86923;
+}
+
+.menu ul li.active a {
+    color: #f86923;
+}
+
+.menu ul li a:hover {
+    color: #f86923;
+}
+
+.text-stories {
+    color: #f86923;
+}
+
+.progress-bar {
+    background-color: #f86923;
+}
+
+.single-fun-fact span {
+    color: #f86923;
+}
+
+.resume-icon {
+    background: #f86923;
+}
+
+.resume-time > p {
+    color: #949494;;
+}
+
+.download-right a {
+    background: #f86923;
+}
+
+.filters .filter.active {
+    color: #f86923;
+}
+
+.item-hover {
+    background: rgba(248, 105, 35, 0.75);
+}
+
+.testimonial-right h5 {
+    color: #f86923;
+}
+
+.blog-right h3 a:hover {
+    color: #f86923;
+}
+
+.view-more {
+    background: #f86923;
+}
+
+.post-view span {
+    color: #000000;
+}
+
+.icon-box {
+    background: #f86923; 
+}
+
+.btn-style-form {
+    background: #f86923;
+}
+
+.form-style:focus {
+    border-bottom: 2px solid #f86923;
+}
+
+.social > a:hover {
+    background: #f86923;
+}
+
+.mobile-btn {
+    background: #f86923;
+}
+
+.mobile-btn:hover {
+    color: #f86923;
+}

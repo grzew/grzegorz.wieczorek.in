@@ -1,0 +1,1519 @@
+/* =======================================================================================
+* Author        : Robbee Labs
+*
+* Template Name : Nur Theme | Personal Resume/CV/Portfolio Html Template
+*
+* File          : Nur CSS file
+*
+* Version       : 1.0
+=========================================================================================*/
+
+
+
+/* TABLE OF CONTENT
+===========================================================================================
+
+00. Body, links, paragraphs, general, preloader styles
+
+01. Sidebar & Navigation Style
+
+02. Section Intro Style
+
+03. Section About Style
+
+04. Section Fun Fact Style
+
+05. Section Resume Style
+
+06. Section Download Resume Style
+
+07. Section Portfolio Style
+
+08. Section Testimonial Style
+
+09. Section Blog Style
+
+10. Section Client Style
+
+11. Section Contact Style
+
+12. Section Single Blog Style
+
+13. Responsive Style
+
+========================================================================================= */
+
+
+
+/*====================================================
+    00. Body, links, paragraphs, general styles
+====================================================*/
+body {
+    color: #2d2d2d;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    padding-left: 15px;
+}
+
+li {
+    padding: 0 0 10px;
+}
+
+a {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+a, a:hover, a:focus {
+    text-decoration: none;
+}
+
+.owl-theme .owl-controls {
+    margin-top: 30px;
+}
+
+section {
+    padding: 60px;
+    overflow: hidden;
+}
+
+div.client {
+    padding: 60px 60px 30px;
+}
+
+.title-section {
+    margin-bottom: 30px;
+}
+
+.title-section h2 {
+    color: #1a1a1a;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    padding: 0 5px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.main-wrapper {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.content-page {
+    width: 800px;
+    position: relative;
+    margin-right: 80px;
+}
+
+.black {
+    background: #000;
+}
+
+.white {
+    background: #fff;
+}
+
+/* Box Options Color Schemes */
+.box-options {
+	position: fixed;
+    right: -200px;
+    top: 100px;
+    z-index: 998;
+    text-align: right;
+    z-index: 90;
+}
+
+.box-options ul {
+	background: #fff;
+    list-style: none;
+    width: 200px;
+	padding-bottom: 0;
+    padding: 9px 4px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.box-options ul li:not(.title-options) {
+    width: 64px;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    float: left;
+    height: 53px;
+}
+
+.box-options ul li.title-options {
+    width: 100%;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    float: left;
+    text-align: left;
+    font-weight: 700;
+}
+
+.box-options ul li:last-of-type {
+	margin-bottom: 0;
+}
+
+.box-options ul li a.color,
+.box-options ul li a.theme {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #f86923;
+}
+
+.box-options ul li a.color.skin-default {
+    background: #eec603;
+}
+
+.box-options ul li a.color.skin-orange {
+    background: #f86923;
+}
+
+.box-options ul li a.color.skin-green {
+    background: #14d283;
+}
+
+.box-options ul li a.color.skin-blue {
+    background: #337ab7;
+}
+
+.box-options ul li a.color.skin-red {
+    background: #f7343d;
+}
+
+.box-options ul li a.color.skin-purple {
+    background: #cc1b6f;
+}
+
+.box-options ul li a.theme.theme-dark {
+    background: #000000;
+}
+
+.box-options ul li a.theme.theme-light {
+    background: #eeeeee;
+}
+
+.box-options ul:last-child {
+    margin-top: -15px;
+}
+
+.box-options ul:last-child li {
+    margin-bottom: 0;
+}
+
+.box-colors {
+	overflow: hidden;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out; 
+}
+
+.box-colors.show {
+    margin-right: 200px;
+}
+
+.options {
+    background: #fff;
+    font-size: 23px;
+    padding: 13px 15px;
+    cursor: pointer;
+    float: left;
+}
+
+.options span {
+    display: block;
+}
+
+.options:hover {
+    color: #000;
+}
+
+.mobile-btn {
+    position: fixed;
+    z-index: 99;
+    font-size: 35px;
+    width: 50px;
+    height: 50px;
+    line-height: 51px;
+    text-align: center;
+    color: #fff;
+    display: none;
+    left: 0;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;  
+}
+
+/* -------- Preloader -------- */
+.preloader-wrap {
+    background: #000 none repeat scroll 0 0;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+}
+
+.cubes {
+    width: 73px;
+    height: 73px;
+    position: absolute;
+    transform: rotateZ(45deg);
+    -o-transform: rotateZ(45deg);
+    -ms-transform: rotateZ(45deg);
+    -webkit-transform: rotateZ(45deg);
+    -moz-transform: rotateZ(45deg);
+    z-index: 99999;
+    top: 50%;
+    left: 50%;
+    margin-left: -36px;
+    margin-top: -35px;
+}
+
+.cubes .cube {
+	position: relative;
+	transform: rotateZ(45deg);
+    -o-transform: rotateZ(45deg);
+    -ms-transform: rotateZ(45deg);
+    -webkit-transform: rotateZ(45deg);
+    -moz-transform: rotateZ(45deg);
+}
+
+.cubes .cube {
+	float: left;
+	width: 50%;
+	height: 50%;
+	position: relative;
+	transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+}
+
+.cubes .cube:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(255,255,255);
+	animation: cssload-fold-thecube 2.04s infinite linear both;
+    -o-animation: cssload-fold-thecube 2.04s infinite linear both;
+    -ms-animation: cssload-fold-thecube 2.04s infinite linear both;
+    -webkit-animation: cssload-fold-thecube 2.04s infinite linear both;
+    -moz-animation: cssload-fold-thecube 2.04s infinite linear both;
+    transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+}
+
+.cubes .cube-c2 {
+	transform: scale(1.1) rotateZ(90deg);
+    -o-transform: scale(1.1) rotateZ(90deg);
+    -ms-transform: scale(1.1) rotateZ(90deg);
+    -webkit-transform: scale(1.1) rotateZ(90deg);
+    -moz-transform: scale(1.1) rotateZ(90deg);
+}
+
+.cubes .cube-c3 {
+	transform: scale(1.1) rotateZ(180deg);
+    -o-transform: scale(1.1) rotateZ(180deg);
+    -ms-transform: scale(1.1) rotateZ(180deg);
+    -webkit-transform: scale(1.1) rotateZ(180deg);
+    -moz-transform: scale(1.1) rotateZ(180deg);
+}
+
+.cubes .cube-c4 {
+	transform: scale(1.1) rotateZ(270deg);
+    -o-transform: scale(1.1) rotateZ(270deg);
+    -ms-transform: scale(1.1) rotateZ(270deg);
+    -webkit-transform: scale(1.1) rotateZ(270deg);
+    -moz-transform: scale(1.1) rotateZ(270deg);
+}
+
+.cubes .cube-c2:before {
+	animation-delay: 0.255s;
+    -o-animation-delay: 0.255s;
+    -ms-animation-delay: 0.255s;
+    -webkit-animation-delay: 0.255s;
+    -moz-animation-delay: 0.255s;
+}
+
+.cubes .cube-c3:before {
+	animation-delay: 0.51s;
+    -o-animation-delay: 0.51s;
+    -ms-animation-delay: 0.51s;
+    -webkit-animation-delay: 0.51s;
+    -moz-animation-delay: 0.51s;
+}
+
+.cubes .cube-c4:before {
+	animation-delay: 0.765s;
+    -o-animation-delay: 0.765s;
+    -ms-animation-delay: 0.765s;
+    -webkit-animation-delay: 0.765s;
+    -moz-animation-delay: 0.765s;
+}
+
+
+
+@keyframes cssload-fold-thecube {
+	0%, 10% {
+		transform: perspective(136px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		transform: perspective(136px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		transform: perspective(136px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-o-keyframes cssload-fold-thecube {
+	0%, 10% {
+		-o-transform: perspective(136px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		-o-transform: perspective(136px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		-o-transform: perspective(136px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-ms-keyframes cssload-fold-thecube {
+	0%, 10% {
+		-ms-transform: perspective(136px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		-ms-transform: perspective(136px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		-ms-transform: perspective(136px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes cssload-fold-thecube {
+	0%, 10% {
+		-webkit-transform: perspective(136px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		-webkit-transform: perspective(136px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		-webkit-transform: perspective(136px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes cssload-fold-thecube {
+	0%, 10% {
+		-moz-transform: perspective(136px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		-moz-transform: perspective(136px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		-moz-transform: perspective(136px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+/*====================================================
+    01. Sidebar & Navigation Style
+====================================================*/
+.sidebar-page {
+    width: 280px;
+    padding: 25px 35px 25px 0;
+    position: fixed;
+    z-index: 5;
+    text-align: right;
+}
+
+.avatar {
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+    border-radius: 999px;
+    overflow: hidden;
+    position: relative;
+    z-index: 99;
+    width: 180px;
+    height: 180px;
+    display: inline-block;
+}
+
+.content-sidebar {
+    position: relative;
+    margin-left: -35px;
+    margin-right: -35px;
+    margin-top: -100px;
+    padding: 115px 35px 0;
+}
+
+.name {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.name > h1 {
+    margin: 0;
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 400;
+}
+
+.name > p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.menu {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul > li {
+    padding: 7px 0 7px 0;
+    margin-bottom: 5px;
+    border-bottom: 1px solid transparent;
+}
+
+.menu ul > li:last-child {
+    margin-bottom: 0;
+}
+
+.menu ul > li > a {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu ul > li > a:hover,
+.menu ul > li.active > a {
+    text-decoration: none;
+    text-decoration: line-through;
+}
+
+.social {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.social > a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 31px;
+    text-align: center;
+    margin-right: 5px;
+    font-size: 19px;
+}
+
+.social > a:hover {
+    text-decoration: none;
+}
+
+.social > a:last-child {
+    margin-right: 0;   
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+.copyright > p {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+/*====================================================
+    02. Section Intro Style
+====================================================*/
+.intro {
+    position: relative;
+    padding: 0!important;
+    height: 650px;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.text-intro {
+    position: absolute;
+    z-index: 99;
+    color: #fff;
+    right: 0;
+    text-align: center;
+    left: 0;
+    padding: 35px 130px;
+    top: 33%;
+}
+
+.text-intro > h3 {
+    margin: 0 0 10px 0;
+    font-size: 25px;
+    line-height: 33px;
+    font-weight: 400;
+}
+
+.text-intro > p {
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+}
+
+.hey {
+    position: absolute;
+    bottom: 25px;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.hey > a {
+    color: #ccc;
+    font-size: 45px;
+    display: inline-block;
+    -webkit-animation: bounce 3s infinite;
+    -moz-animation: bounce 3s infinite;
+    -ms-animation: bounce 3s infinite;
+    -o-animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.hey > a > span {
+    display: inline-block;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+/*====================================================
+    03. Section About Style
+====================================================*/
+.story {
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.text-stories {
+    font-weight: 700;
+}
+
+.info > ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.info > ul > li {
+    padding: 10px 0 0;
+    margin-bottom: 11px;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+.info > ul > li:last-child {
+    margin-bottom: 0;
+}
+
+.info > ul > li > span {
+    color: #1a1a1a;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.skills > h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #1a1a1a;
+}
+
+.skills > h5 > span {
+    float: right;
+    color: #2d2d2d;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.skills .progress {
+    height: 4px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #e2e2e2;
+    margin-bottom: 35px;
+}
+
+.skills .progress:last-child {
+    margin-bottom: 0;
+}
+
+.progress-bar {
+    float: left;
+    width: 0; 
+    height: 100%;
+    -webkit-box-shadow: 0 0 0;
+    -moz-box-shadow: 0 0 0;
+    -ms-box-shadow: 0 0 0;
+    -o-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+}
+
+.progress {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: 0 0 0;
+    -moz-box-shadow: 0 0 0;
+    -ms-box-shadow: 0 0 0;
+    -o-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+}
+
+/*====================================================
+    04. Section Fun Fact Style
+====================================================*/
+.fun-fact {
+    background-color: #000;
+    padding: 60px 45px;
+    position: relative;
+    background-size: cover;
+}
+
+.single-fun-fact {
+    position: relative;
+    z-index: 15;
+}
+
+.single-fun-fact span {
+    display: inline-block;
+    font-size: 37px;
+    margin-bottom: 10px;
+}
+
+.single-fun-fact h3 {
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.single-fun-fact h4 {
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 14px;
+    margin-top: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+/*====================================================
+    05. Section Resume Style
+====================================================*/
+.resume-line {
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.resume-line:last-child {
+    margin-bottom: 0px;   
+}
+
+.resume-log {
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+.line-right .resume-log {
+    text-align: left;
+    padding-right: 0;
+    padding-left: 30px;
+}
+
+.resume-icon {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 27px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.resume-time > p {
+    margin-bottom: 0!important;
+    font-size: 13px!important; 
+    font-style: italic;
+    color: #999;
+}
+
+.resume-desc {
+    padding: 20px;
+    background: #f3f3f3;
+    color: #2d2d2d;
+    position: relative;
+}
+
+.resume-desc:before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    border-width: 20px;
+    border-style: solid;
+}
+
+.line-left .resume-desc:before {
+    border-color: transparent #f3f3f3 transparent transparent;
+    left: -40px;
+}
+
+.line-right .resume-desc:before {
+    border-color: transparent transparent transparent #f3f3f3;
+    right: -40px;
+}
+
+.line-right .resume-desc {
+    text-align: right;
+}
+
+.resume-desc h3 {
+    margin: 0 0 3px 0;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #1a1a1a;
+}
+
+.resume-desc p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 300;
+}
+
+/*====================================================
+    06. Section Download Resume Style
+====================================================*/
+.download-cv {
+    background-color: #000;
+    position: relative;
+    background-size: cover;
+}
+
+.download-left h2 {
+    margin: 0 0 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.download-left p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+.download-right {
+    text-align: right;
+}
+
+.download-right a {
+    color: #fff;
+    padding: 12px 15px;
+    display: inline-block;
+    margin-top: 23px;
+    line-height: 1;
+}
+
+.download-right a:hover {
+    background: #000;
+}
+
+/*====================================================
+    07. Section Portfolio Style
+====================================================*/
+.filters-portfolio {
+    margin-bottom: 30px;
+}
+
+.filters {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.filters .filter {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.filters .filter.active {
+    text-decoration: line-through;
+}
+
+.grid-item {
+    margin-bottom: 30px;
+}
+
+.grid-item a {
+    display: block;
+    position: relative;
+    outline: none;
+    overflow: hidden;
+}
+
+.grid-item a img,
+.grid-item,
+.item-hover {
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.item-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+    opacity: 0;
+    visibility: hidden;
+    border: 7px double #fff;
+}
+
+.grid-item a:hover > .item-hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+.grid-item a:hover > img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.item-hover h3 {
+    color: #fff;
+    margin: 0;
+    font-weight: 400;
+}
+
+.item-hover p {
+    color: #fff;
+    margin: 0;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.modal-box {
+	max-width: 550px;
+	background: #fff;
+	position: relative!important;
+	margin: 0 auto;
+	left: 0!important;
+}
+
+.modal-box img {
+	width: 100%;
+	height: 100%;
+}
+
+.modal-box-content {
+	padding: 30px;
+}
+
+.modal-box-content h3 {
+	font-size: 16px;
+    line-height: 23px;
+    margin: 0;
+    color: #1a1a1a;
+    font-weight: 400;
+}
+
+.modal-box-content span {
+    font-size: 13px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #999;
+    font-style: italic;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.modal-box-content p {
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/*====================================================
+    08. Section Testimonial Style
+====================================================*/
+.testimonial {
+    background-color: #000;
+    position: relative;
+    background-size: cover;
+}
+
+.tesmonial-line {
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 15;
+}
+
+.testimonial-left img {
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+    border-radius: 999px;
+}
+
+.testimonial-right p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+    position: relative;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+.testimonial-right p:before {
+    position: absolute;
+    content: "\f347";
+    left: 0;
+    top: 10px;
+    font-family: 'Ionicons';
+    font-size: 20px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.testimonial-right h5 {
+    font-weight: 400;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 2px;
+    background: #fff;
+}
+
+/*====================================================
+    09. Section Blog Style
+====================================================*/
+.blog-line {
+    color: #2d2d2d;
+    margin: 0 0 30px;
+}
+
+.blog-right h3 {
+    margin: 5px 0 5px;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+}
+
+.blog-right h3 a {
+    color: #1a1a1a;
+}
+
+.blog-right p {
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+.post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.post-view {
+    position: relative;
+    padding: 0 0 0 7px;
+}
+
+.post-view span {
+    font-size: 12px;
+    margin-left: 3px;
+}
+
+.post-view:before {
+    content: "|";
+    position: absolute;
+    top: -5px;
+    left: 0;
+}
+
+.view-more {
+    color: #fff;
+    padding: 8px 15px;
+    display: inline-block;
+    line-height: 1;
+}
+
+.view-more span {
+    vertical-align: middle;
+}
+
+.view-more span:nth-child(2) {
+    margin-left: 5px;
+}
+
+.view-more:hover,
+.view-more:focus {
+    background: #000;
+    color: #fff;
+}
+
+/*====================================================
+    10. Section Client Style
+====================================================*/
+.client {
+    background-color: #000;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.client-line {
+    margin: 0;
+}
+
+/*====================================================
+    11. Section Contact Style
+====================================================*/
+.contact-box {
+    margin-bottom: 20px;
+}
+
+.title-box {
+    margin-bottom: 10px;
+}
+
+.icon-box {
+    float: left;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 1;
+    padding: 10px;  
+}
+
+.name-box {
+    padding-left: 45px;
+    min-height: 35px;
+}
+
+.name-box h5 {
+    margin: 0;
+    line-height: 35px;
+    font-weight: 400;
+    color: #1a1a1a;
+}
+
+.content-box p {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+.form-line {
+    margin-bottom: 30px;
+}
+
+.form-line:last-child {
+    margin-bottom: 0;
+}
+
+.form-style {
+    width: 100%;
+    border-bottom: 2px solid #000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 10px 0;
+    outline: none;
+}
+
+.btn-style-form {
+    color: #fff;
+    padding: 12px 25px;
+    display: inline-block;
+    line-height: 1;
+    border: none;
+    float: right;
+    outline: none;
+}
+
+.btn-style-form:hover {
+    background: #000;
+}
+
+.form-style.error_input {
+    border-bottom: 2px solid #f7343d;
+}
+
+#success {
+    background: #14d283;
+    color: #035d37;
+    padding: 5px 10px;
+    font-weight: 700;
+    display: none;
+    font-size: 13px;
+}
+
+#error {
+    background: #ff888e;
+    color: #a7353b;
+    padding: 5px 10px;
+    font-weight: 700;
+    display: none;
+    font-size: 13px;
+}
+
+/*====================================================
+    12. Section Single Blog Style
+====================================================*/
+.title-single-blog h1 {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #1a1a1a;
+}
+
+.meta-single-blog {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.description-single-blog {
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+/*====================================================
+    13. Responsive Style
+====================================================*/
+@media screen and (max-width: 990px){
+    .sidebar-page {
+        left: -280px;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        z-index: 999;
+        overflow-y: auto;
+    }
+    
+    .sidebar-page.on {
+        left: 0;
+    }
+    
+    .main-wrapper {
+        width: 100%;
+        padding: 0 130px;
+    }
+    
+    .content-page {
+        width: 100%;
+        margin-right: 0;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .content-page.on {
+        margin-right: -150px;
+        position: relative;
+    }
+    
+    .content-page:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 70;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .content-page.on:before {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .mobile-btn {
+        display: inline-block;
+    }
+    
+    .mobile-btn:hover {
+        background: #000;
+    }
+    
+    .mobile-btn.active {
+        left: 280px;
+    }
+    
+    section {
+        padding: 50px;    
+    }
+    
+    .main-wrapper {
+        padding: 0;
+    }
+    
+    .info-list {
+        margin-bottom: 30px!important;
+    }
+    
+    .info ul li {
+        margin-bottom: 5px;
+    }
+    
+    .resume-line {
+        padding: 0 15px;
+    }
+    
+    .resume-log {
+        padding-left: 0;
+    }
+    
+    .fun-fact .col-md-3 .single-fun-fact {
+        margin-bottom: 30px;
+    }
+    
+    .fun-fact .col-md-3:last-child .single-fun-fact {
+        margin-bottom: 0;
+    }
+
+    .line-right .resume-log {
+        padding-right: 0;
+    }
+    
+    .download-line {
+        text-align: center;
+    }
+    
+    .download-right {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .text-intro {
+        padding: 35px 40px;
+    }
+    
+    section {
+        padding: 40px 20px;    
+    }
+    
+    .blog-line {
+        margin: 0 -15px 30px;
+    }
+    
+    .download-cv,
+    .testimonial {
+        padding: 40px 20px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .mobile-btn {
+        font-size: 42px;
+        width: 60px;
+        height: 60px;
+        line-height: 65px;
+    }
+    
+    .text-intro {
+        padding: 35px 20px;
+        top: 30%;
+    }
+    
+    .text-intro h3 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    
+    .fun-fact .col-xs-6,
+    .works .col-xs-6,
+    .tesmonial-line .col-xs-3,
+    .tesmonial-line .col-xs-9,
+    .blog .col-xs-4,
+    .blog .col-xs-8 {
+        width: 100%;
+    }
+    
+    .portfolio .grid-item {
+        width: 100%;
+    }
+    
+    .testimonial-left {
+        text-align: center;
+    }
+    
+    .testimonial-left img {
+        max-width: 150px;
+    }
+    
+    .testimonial-right h5 {
+        text-align: center;
+    }
+    
+    .resume-line {
+        padding: 0;
+    }
+    
+    .resume-log {
+        display: none;
+    }
+    
+    .resume-desc {
+        width: 100%;
+    }
+    
+    .blog-left {
+        margin-bottom: 10px;
+    }
+    
+    .blog-line img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-height: 480px){
+    .text-intro h3 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+}

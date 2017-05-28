@@ -1,0 +1,33 @@
+body {
+    background: #ececec;
+}
+
+.overlay {
+    background: rgba(214, 214, 214, 0.5);
+}
+
+.sidebar-page {
+    background: #ececec;
+}
+
+.name h1 {
+    color: #000;
+}
+
+.name p {
+    color: #555;
+}
+
+.menu ul li a {
+    color: #1a1a1a;
+}
+
+.social > a {
+    background: #000;
+    color: #fff;
+}
+
+.blog-line {
+    padding: 0;
+    background: #fff;
+}

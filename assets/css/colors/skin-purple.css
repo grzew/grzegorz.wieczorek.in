@@ -1,0 +1,95 @@
+.options {
+    color: #cc1b6f;
+}
+
+.text-intro h3 {
+    color: #ffffff;
+}
+
+.text-intro p {
+    color: #cc1b6f;
+}
+
+.hey a:hover {
+    color: #cc1b6f;
+}
+
+.menu ul li.active a {
+    color: #cc1b6f;
+}
+
+.menu ul li a:hover {
+    color: #cc1b6f;
+}
+
+.text-stories {
+    color: #cc1b6f;
+}
+
+.progress-bar {
+    background-color: #cc1b6f;
+}
+
+.single-fun-fact span {
+    color: #cc1b6f;
+}
+
+.resume-icon {
+    background: #cc1b6f;
+}
+
+.resume-time > p {
+    color: #949494;;
+}
+
+.download-right a {
+    background: #cc1b6f;
+}
+
+.filters .filter.active {
+    color: #cc1b6f;
+}
+
+.item-hover {
+    background: rgba(204, 27, 111, 0.75);
+}
+
+.testimonial-right h5 {
+    color: #cc1b6f;
+}
+
+.blog-right h3 a:hover {
+    color: #cc1b6f;
+}
+
+.view-more {
+    background: #cc1b6f;
+}
+
+.post-view span {
+    color: #000000;
+}
+
+.icon-box {
+    background: #cc1b6f; 
+}
+
+.btn-style-form {
+    background: #cc1b6f;
+}
+
+.form-style:focus {
+    border-bottom: 2px solid #cc1b6f;
+}
+
+.social > a:hover {
+    background: #cc1b6f;
+}
+
+.mobile-btn {
+    background: #cc1b6f;
+}
+
+.mobile-btn:hover {
+    color: #cc1b6f;
+}

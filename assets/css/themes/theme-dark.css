@@ -1,0 +1,28 @@
+body {
+    background: #000000;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.sidebar-page {
+    background: #000;
+}
+
+.name h1 {
+    color: #fff;
+}
+
+.name p {
+    color: #999;
+}
+
+.menu ul li a {
+    color: #999;
+}
+
+.social > a {
+    background: #fff;
+    color: #000;
+}
